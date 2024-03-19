@@ -1,0 +1,7 @@
+{
+  "name": "Virtuoso_Labs",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
