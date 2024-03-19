@@ -1,0 +1,8 @@
+24-02-2024
+
+ionic g service authentication
+New Page Another
+
+path: /Another
+
+declarations of exported pages and components on app.module.ts

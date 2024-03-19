@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-button (click)="goBacktoHomePage()"> <!--method to go back on the home page-->
+          <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      <ion-title class="top">
+        My Custom Page
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content [fullscreen]="true">
+    <ion-header collapse="condense">
+      <ion-toolbar>
+        <ion-title size="large">Blank</ion-title>
+      </ion-toolbar>
+    </ion-header>
+  
+    <div id="container">
+      <strong>This is ID Page: {{id}}</strong><br><br>
+      <div>
+        <strong>Hello!</strong><br>
+      </div>
+      <ion-button (click)="goBacktoHomePage()">Go Back To Home</ion-button> <!--method to go back on the home page-->
+    </div>
+  </ion-content>
+  
