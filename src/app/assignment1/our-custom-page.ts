@@ -4,6 +4,6 @@ import { Component } from '@angular/core';
   templateUrl: 'assignmentpage.html',
 })
 export class HomePage {
-  groupName = ' I am Ken Singson, I am from Group Virtuoso Labs!'; // add GroupName
+  groupName = ' Hello, we are group Virtuoso Labs! (Dela Cruz, Luna, Singson)'; // add GroupName
   constructor() {}
 }
