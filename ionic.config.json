@@ -1,0 +1,7 @@
+{
+  "name": "Activity5-DELACRUZ",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
