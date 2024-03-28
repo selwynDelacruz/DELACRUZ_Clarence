@@ -1,38 +1,30 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>login</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Login Page</ion-title>
-    </ion-toolbar>
-  </ion-header>
+ 
 
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Welcome</ion-card-title>   
-    </ion-card-header>
-    <ion-card-content>Enter your credentials to login!</ion-card-content>
-    <div class="form">
+   <div class="input">
+    <h1>Login</h1>
+        <ion-input
+        class="custom"
+        [(ngModel)]="username"
+        label="Username"
+        labelPlacement="floating"
+        type="text"
+        placeholder="Your username!"
+        fill="outline"></ion-input>
+      
       <ion-input
-      [(ngModel)]="username"
-      label="Username"
-      labelPlacement="floating"
-      type="text"
-      placeholder="Username"></ion-input>
-    
-    <ion-input
-      [(ngModel)]="password"
-      label="Password"
-      labelPlacement="floating"
-      type="text"
-      placeholder="Password"></ion-input>
+        class="custom"
+        label="Password"
+        [(ngModel)]="password"
+        labelPlacement="floating"
+        type="password"
+        placeholder="Your password!"
+        fill="outline">
+      </ion-input>
+
+        <ion-button shape="round" (click)="login()">
+          Login
+          <ion-icon name="enter-outline"></ion-icon>
+        </ion-button>
     </div>
-  </ion-card>
-  <div id="container">
-    <ion-button (click)="login()">Login</ion-button>
-  </div>
 </ion-content>
